@@ -1,92 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Fundamentos - Justify Content</title>
+        <title>Fundamentos - Align Items</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
+            
             .container {
-                max-width: 400px;
+                max-width: width 350px;
                 border: 1px solid black;
-                margin: 0;
                 display: flex;
-                margin-bottom: 10px;
 
             }
 
-            .item{
+            .item {
                 background-color:blueviolet;
                 margin: 5px;
-                text-align: center;
                 color: white;
-            }
-           
-            .flex-start{
-                justify-content: flex-start;
+                text-align: center;
+                flex: 1;
 
             }
-
-            .flex-end{
-                justify-content: flex-end;
+            .stretch {
+                align-items: stretch;
             }
 
-            .center{
-                justify-content: center;
+            .start {
+                align-items: flex-start;
             }
 
-            .space-between{
-                justify-content: space-between;
+            .end {
+                align-items: flex-end;
             }
 
-            .space-around{
-                justify-content: space-around;
+            .baseline {
+                align-items: baseline;
             }
         </style>
     </head>
     <body>
-        <p>Flex-Start</p>
-        <section class="container flex-start">
-            <div class="item">1</div>
-            <div class="item">tem 2</div>
-            <div class="item">outro item</div>
-        </section>
-        <p>Flex-End</p>
-        <section class="container flex-end">
-            <div class="item">1</div>
-            <div class="item">tem 2</div>
-            <div class="item">outro item</div>
-        </section>
         <p>Center</p>
         <section class="container center">
-            <div class="item">1</div>
-            <div class="item">tem 2</div>
-            <div class="item">outro item</div>
-            <div class="item">outro item</div>
-            <div class="item">outro item</div>
+            <div class="item">Item</div>
+            <div class="item">lorem lorem ipsum</div>
+            <div class="item"> Item 3</div>
         </section>
-        <p>Space-Between</p>
-        <section class="container space-between">
-            <div class="item">1</div>
-            <div class="item">tem 2</div>
-            <div class="item">outro item</div>
-            <div class="item">outro item</div>
-            <div class="item">outro item</div>
+        <p>Stretch</p>
+        <section class="container stretch">
+            <div class="item">Item</div>
+            <div class="item">lorem lorem ipsumffdgdsfg</div>
+            <div class="item"> Item 3</div>
         </section>
-            <p>Space-Around</p>
-        <section class="container space-around">
-            <div class="item">1</div>
-            <div class="item">tem 2</div>
-            <div class="item">outro item</div>
-            <div class="item">outro item</div>
-            <div class="item">outro item</div>
+        <p>Flex-Start</p>
+        <section class="container start">
+            <div class="item">Item</div>
+            <div class="item">lorem lorem dfgdfgdfgfdgdfgdfgdfgdfgdgdfipsum</div>
+            <div class="item"> Item 3</div>
         </section>
-        <p>Sem Flex</p>
-        <section class="container">
-            <div class="item">1</div>
-            <div class="item">tem 2</div>
-            <div class="item">outro item</div>
-            <div class="item">outro item</div>
-            <div class="item">outro item</div>
+        <p>Flex-End</p>
+        <section class="container end">
+            <div class="item">Item</div>
+            <div class="item">lorem lorem ipsum</div>
+            <div class="item"> Item 3</div>
+        </section>
+        <p>Baseline</p>
+        <section class="container baseline">
+            <div class="item">Itererterterterterertertertertertertertertem</div>
+            <div class="item">loetertrtrtertertrtertertertertertertertretrem lorem ipsum</div>
+            <div class="item"> er</div>
         </section>
     </body>
 
