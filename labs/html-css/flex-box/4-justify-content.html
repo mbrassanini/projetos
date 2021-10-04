@@ -7,9 +7,10 @@
         <style>
             .container {
                 max-width: 400px;
-                border: 400px;
+                border: 1px solid black;
                 margin: 0;
                 display: flex;
+                margin-bottom: 10px;
 
             }
 
@@ -20,13 +21,63 @@
                 color: white;
             }
            
+            .flex-start{
+                justify-content: flex-start;
 
+            }
+
+            .flex-end{
+                justify-content: flex-end;
+            }
+
+            .center{
+                justify-content: center;
+            }
+
+            .space-between{
+                justify-content: space-between;
+            }
+
+            .space-around{
+                justify-content: space-around;
+            }
         </style>
     </head>
     <body>
-        <section class="container">
+        <p>Flex-Start</p>
+        <section class="container flex-start">
             <div class="item">1</div>
             <div class="item">tem 2</div>
+            <div class="item">outro item</div>
+        </section>
+        <p>Flex-End</p>
+        <section class="container flex-end">
+            <div class="item">1</div>
+            <div class="item">tem 2</div>
+            <div class="item">outro item</div>
+        </section>
+        <p>Center</p>
+        <section class="container center">
+            <div class="item">1</div>
+            <div class="item">tem 2</div>
+            <div class="item">outro item</div>
+            <div class="item">outro item</div>
+            <div class="item">outro item</div>
+        </section>
+        <p>Space-Between</p>
+        <section class="container space-between">
+            <div class="item">1</div>
+            <div class="item">tem 2</div>
+            <div class="item">outro item</div>
+            <div class="item">outro item</div>
+            <div class="item">outro item</div>
+        </section>
+            <p>Space-Around</p>
+        <section class="container space-around">
+            <div class="item">1</div>
+            <div class="item">tem 2</div>
+            <div class="item">outro item</div>
+            <div class="item">outro item</div>
             <div class="item">outro item</div>
         </section>
     </body>
